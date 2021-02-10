@@ -2,17 +2,48 @@
 	font: 14pt Georgia;
 }
 
-.body__text {
+.body__text, .body__text_1 {
+	width: 450px;
+	margin: 0 0 0 0;
 	position: relative;
 	border: 1px solid blue;
 	border-radius: 10px;
 	padding: 10px;
 }
 
-.body__triangle {
+.body__triangle, .body__triangle_white {
+	position: relative;
+	left: 20px;
+	margin: 0 0 0 0;
 	width: 0;
 	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid red;
+	border: 15px solid transparent;
+	border-top: 20px solid blue;
+}
+
+.body__triangle_white {
+	border-top: 20px solid white;
+	bottom: 37px;
+}
+
+.body__audio {
+	margin: -50px 0 10px 0;
+}
+
+.body__text_1 {
+	width: 800px;
+	background: blue;
+	color: white;
+}
+
+.body__text_1::before {
+	bottom: 42px;
+	left: 30px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid blue;
+	-webkit-transform: skew(45deg);
+	-moz-transform: skew(45deg);
+	-o-transform: skew(45deg);
+	position: absolute;
+	content: ''; 
 }
